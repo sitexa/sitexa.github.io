@@ -37,17 +37,17 @@ category: 'other'
 
 微服务架构的思考是从与整体应用对比而产生的。
 
-![/images/microservice1.png]()
+![](/images/microservice1.png)
 
 其中，对应用组件封装的方式是整体架构与微服务架构的主要差异，微服务架构将相关联的业务逻辑及数据放在一起形成独立的边界，其目的是能在不影响其他应用组件(微服务)的情况下更快地交付并推出市场。
 
-![/images/microservice2.png]()
+![](/images/microservice2.png)
 
 ##  微服务架构的一些通用特性
 
 -   1,通过服务实现应用的组件化(Componentizationvia Services)：微服务架构中将组件定义为可被独立替换和升级的软件单元，在应用架构设计中通过将整体应用切分成可独立部署及升级的微服务方式进行组件化设计。
 -   2,围绕业务能力组织服务(Organizedaround Business Capabilities)：微服务架构采取以业务能力为出发点组织服务的策略，因此微服务团队的组织结构必须是跨功能的（如：既管应用，也管数据库）、强搭配的DevOps开发运维一体化团队，通常这些团队不会太大（如：亚马逊的“Two pizzateam”- 不超过12人）。
-![/images/microservice3.png]()
+![](/images/microservice3.png)
 -   3,产品而非项目模式(Productsnot Projects)：传统的应用模式是一个团队以项目模式开发完整的应用，开发完成后就交付给运维团队负责维护；微服务架构则倡导一个团队应该如开发产品般负责一个“微服务”完整的生命周期，倡导“谁开发，谁运营”的开发运维一体化方法。
 -   4,智能端点与管道扁平化(Smartendpoints and dumb pipes)：微服务架构主张将组件间通讯的相关业务逻辑/智能放在组件端点侧而非放在通讯组件中，通讯机制或组件应该尽量简单及松耦合。RESTful HTTP协议和仅提供消息路由功能的轻量级异步机制是微服务架构中最常用的通讯机制。
 -   5,“去中心化”治理(DecentralizedGovernance)：整体式应用往往倾向于采用单一技术平台，微服务架构则鼓励使用合适的工具完成各自的任务，每个微服务可以考虑选用最佳工具完成(如不同的编程语言)。微服务的技术标准倾向于寻找其他开发者已成功验证解决类似问题的技术。
@@ -58,7 +58,7 @@ category: 'other'
 
 ##  微服务的一些常见误解
 
-![/images/microservice4.png]()
+![](/images/microservice4.png)
 
 关于一些比较概念的澄清：
 
@@ -72,11 +72,11 @@ category: 'other'
     
 ##  微服务架构与SOA架构的比较
 
-![/images/microservice5.png]()
+![](/images/microservice5.png)
 
 ##  一个简单的微服务应用例子：航班预订应用
 
-![/images/microservice6.png]()
+![](/images/microservice6.png)
 
 将航班预订应用划分为预订航班、时间表查询、计算票价、分配座位、管理奖励、更新客户、调整库存七个微服务实施。
 
