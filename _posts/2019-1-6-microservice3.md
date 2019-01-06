@@ -10,7 +10,7 @@ category: 'other'
 
 采用微服务架构意味着以更复杂的运维环境为代价，实现更高速的应用交付及更快推出市场。因此企业需要在更快的交付与更复杂的运维之间进行权衡。
 
-![](images/microservice19.tiff)
+![](images/microservice19.png)
 
 大部分企业都有大量遗留的应用系统，因此对需要更快更好地满足业务需求成为迫切任务时，大部分情况下企业不会全新构建一个完整的应用，通常情况下是企业对已有应用进行重构或希望能尽量重用已有代码。
 
@@ -37,7 +37,7 @@ category: 'other'
 
 微服务重构后还需要重新打包应用，包括：(1)分割应用的EAR文件并打包成独立的WAR文件；(2)应用“一个容器一个服务”，分别部署每个WAR文件至其自有的WebSphereLiberty实例运行时或Docker容器中；(3)分别构建、部署和管理,为每个WAR文件使用独立的DevOps管线,每个WAR文件独立伸缩和管理。
 
-![](/images/microservice20.tiff)
+![](/images/microservice20.png)
 
 ##  微服务IBM解决方案
 
