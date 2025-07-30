@@ -1,0 +1,45 @@
+---
+layout: archive
+title: "Blog Posts - Page 4"
+permalink: /blog/page/4/
+author_profile: true
+---
+
+{% assign posts = site.posts | sort: 'date' | reverse %}
+{% assign posts_per_page = 5 %}
+{% assign total_posts = posts.size %}
+{% assign total_pages = total_posts | divided_by: posts_per_page | ceil %}
+
+{% assign current_page = 4 %}
+{% assign start_index = current_page | minus: 1 | times: posts_per_page %}
+{% assign end_index = start_index | plus: posts_per_page | minus: 1 %}
+{% if end_index >= total_posts %}
+  {% assign end_index = total_posts | minus: 1 %}
+{% endif %}
+
+{% for i in (start_index..end_index) %}
+  {% assign post = posts[i] %}
+  {% include archive-single.html %}
+{% endfor %}
+
+{% if total_pages > 1 %}
+<nav class="pagination">
+  <ul>
+    <li><a href="{{ base_path }}/blog/page/3/">Previous</a></li>
+
+    <li><a href="{{ base_path }}/blog/">1</a></li>
+    <li><a href="{{ base_path }}/blog/page/2/">2</a></li>
+    <li><a href="{{ base_path }}/blog/page/3/">3</a></li>
+    <li><a href="#" class="disabled current">4</a></li>
+    {% if total_pages >= 5 %}
+      <li><a href="{{ base_path }}/blog/page/5/">5</a></li>
+    {% endif %}
+
+    {% if total_pages > 4 %}
+      <li><a href="{{ base_path }}/blog/page/5/">Next</a></li>
+    {% else %}
+      <li><a href="#" class="disabled"><span aria-hidden="true">Next</span></a></li>
+    {% endif %}
+  </ul>
+</nav>
+{% endif %}

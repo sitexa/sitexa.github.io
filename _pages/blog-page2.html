@@ -1,7 +1,7 @@
 ---
 layout: archive
-title: "Blog Posts"
-permalink: /blog/
+title: "Blog Posts - Page 2"
+permalink: /blog/page/2/
 author_profile: true
 ---
 
@@ -10,10 +10,7 @@ author_profile: true
 {% assign total_posts = posts.size %}
 {% assign total_pages = total_posts | divided_by: posts_per_page | ceil %}
 
-{% assign current_page = 1 %}
-{% if page.url contains '/page/' %}
-  {% assign current_page = page.url | split: '/' | last | plus: 0 %}
-{% endif %}
+{% assign current_page = 2 %}
 
 {% assign start_index = current_page | minus: 1 | times: posts_per_page %}
 {% assign end_index = start_index | plus: posts_per_page | minus: 1 %}

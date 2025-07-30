@@ -264,22 +264,15 @@ sass:
 permalink: /:categories/:title/
 timezone: Etc/UTC # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
-# Pagination v2 Configuration
-pagination:
-  enabled: true
-  per_page: 5
-  permalink: /page/:num/
-  title: ':title - Page :num'
-  limit: 0
-  sort_field: 'date'
-  sort_reverse: true
+# Pagination Configuration (commented out - using static pages instead)
+# paginate: 5 # amount of posts to show
+# paginate_path: /page:num/
 
 
 # Plugins
 plugins:
   - jekyll-feed
   - jekyll-gist
-  - jekyll-paginate-v2
   - jekyll-sitemap
   - jekyll-redirect-from
   - jemoji
@@ -288,7 +281,6 @@ plugins:
 whitelist:
   - jekyll-feed
   - jekyll-gist
-  - jekyll-paginate-v2
   - jekyll-sitemap
   - jekyll-redirect-from
   - jemoji
