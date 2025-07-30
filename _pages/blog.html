@@ -1,0 +1,24 @@
+---
+layout: archive
+title: "Blog Posts"
+permalink: /blog/
+author_profile: true
+pagination:
+  enabled: true
+  collection: posts
+  per_page: 5
+  permalink: /page/:num/
+  title: ':title - Page :num'
+  limit: 0
+  sort_field: 'date'
+  sort_reverse: true
+  trail:
+    before: 2
+    after: 2
+---
+
+{% for post in paginator.posts %}
+  {% include archive-single.html %}
+{% endfor %}
+
+{% include paginator-v2.html %}

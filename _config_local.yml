@@ -1,0 +1,13 @@
+# Local development configuration
+# Override the production URL settings for local development
+
+url: http://localhost:4000
+baseurl: ""
+
+# Disable analytics for local development
+analytics:
+  provider: false
+
+# Disable comments for local development
+comments:
+  provider: false

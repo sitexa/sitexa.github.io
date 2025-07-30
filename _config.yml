@@ -15,6 +15,7 @@ name                     : &name "Sitexa"
 description              : &description "This is a blog about Sitexa."
 url                      : https://sitexa.github.io # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io" or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
+# For local development, use: bundle exec jekyll serve --config _config.yml,_config_local.yml
 repository               : "sitexa/sitexa.github.io"
 
 # Site Author - The following control what appear as part of the author content on the side bar.
@@ -44,7 +45,7 @@ publication_category:
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 breadcrumbs              : false # true, false (default)
 words_per_minute         : 160
-future                   : true
+future                   : false
 read_more                : "disabled" # if enabled, adds "Read more" links to excerpts
 talkmap_link             : false      #change to true to add link to talkmap on talks page
 comments:
@@ -179,6 +180,9 @@ collections:
   portfolio:
     output: true
     permalink: /:collection/:path/
+  projects:
+    output: true
+    permalink: /:collection/:path/
   talks:
     output: true
     permalink: /:collection/:path/
@@ -239,6 +243,15 @@ defaults:
       layout: talk
       author_profile: true
       share: true
+  # _projects
+  - scope:
+      path: ""
+      type: projects
+    values:
+      layout: single
+      author_profile: true
+      share: true
+      comments: true
 
 
 # Sass/SCSS
@@ -249,16 +262,24 @@ sass:
 
 # Outputting
 permalink: /:categories/:title/
-# paginate: 5 # amount of posts to show
-# paginate_path: /page:num/
 timezone: Etc/UTC # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+
+# Pagination v2 Configuration
+pagination:
+  enabled: true
+  per_page: 5
+  permalink: /page/:num/
+  title: ':title - Page :num'
+  limit: 0
+  sort_field: 'date'
+  sort_reverse: true
 
 
 # Plugins
 plugins:
   - jekyll-feed
   - jekyll-gist
-  - jekyll-paginate
+  - jekyll-paginate-v2
   - jekyll-sitemap
   - jekyll-redirect-from
   - jemoji
@@ -267,7 +288,7 @@ plugins:
 whitelist:
   - jekyll-feed
   - jekyll-gist
-  - jekyll-paginate
+  - jekyll-paginate-v2
   - jekyll-sitemap
   - jekyll-redirect-from
   - jemoji
