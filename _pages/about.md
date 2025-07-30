@@ -1,56 +1,41 @@
 ---
 permalink: /
-title: "Academic Pages is a ready-to-fork GitHub Pages template for academic personal websites"
+title: "AI时代应当如何思考与行动"
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
+classes: chinese-content
 ---
 
-This is the front page of a website that is powered by the [Academic Pages template](https://github.com/academicpages/academicpages.github.io) and hosted on GitHub pages. [GitHub pages](https://pages.github.com) is a free service in which websites are built and hosted from code and data stored in a GitHub repository, automatically updating when a new commit is made to the repository. This template was forked from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/) created by Michael Rose, and then extended to support the kinds of content that academics have: publications, talks, teaching, a portfolio, blog posts, and a dynamically-generated CV. Incidentally, these same features make it a great template for anyone that needs to show off a professional template!
+我们正站在一个文明断层的边缘。AI，不再只是一个工具，而是一面镜子，映照出人类智能的极限与盲点，也是一柄刀锋，既可雕刻新时代的辉煌，也可割裂人类的自我认知与生存秩序。面对这一时代之变，我们不应陶醉于技术的繁花似锦，也不应恐惧于失控的幽灵幻影，而应以深思与自觉，塑造一条既理性又有灵魂的未来路径。
 
- You can fork [this template](https://github.com/academicpages/academicpages.github.io) right now, modify the configuration and Markdown files, add your own PDFs and other content, and have your own site for free, with no ads!
+**一、意识的更新：从“工具理性”到“存在反思”**
 
-A data-driven personal website
-======
-Like many other Jekyll-based GitHub Pages templates, Academic Pages makes you separate the website's content from its form. The content & metadata of your website are in structured Markdown files, while various other files constitute the theme, specifying how to transform that content & metadata into HTML pages. You keep these various Markdown (.md), YAML (.yml), HTML, and CSS files in a public GitHub repository. Each time you commit and push an update to the repository, the [GitHub pages](https://pages.github.com/) service creates static HTML pages based on these files, which are hosted on GitHub's servers free of charge.
+大多数人仍然以旧工业时代的思维看待AI：它是生产力的延伸，是办公效率的提升，是人力成本的节省。但AI所带来的，远不止效率革命。它在模仿与创造之间模糊界限，在“似人”与“非人”之间挑战定义，在数据与经验之间生成新型知识。在这一过程中，人类传统意义上的“独特性”正在消解。我们曾自诩为“理性动物”、“语言的主宰者”、“有意识的存在”，而AI却正在逐一模拟甚至超越这些特征。
 
-Many of the features of dynamic content management systems (like Wordpress) can be achieved in this fashion, using a fraction of the computational resources and with far less vulnerability to hacking and DDoSing. You can also modify the theme to your heart's content without touching the content of your site. If you get to a point where you've broken something in Jekyll/HTML/CSS beyond repair, your Markdown files describing your talks, publications, etc. are safe. You can rollback the changes or even delete the repository and start over - just be sure to save the Markdown files! You can also write scripts that process the structured data on the site, such as [this one](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.ipynb) that analyzes metadata in pages about talks to display [a map of every location you've given a talk](https://academicpages.github.io/talkmap.html).
+因此，AI时代首先要求我们完成一次“意识上的退位”与“本体性的升维”——不再执着于人类中心主义，而是开始反思：我们是谁？什么是真正的智能？我们的价值和尊严从何而来？这一反思不是虚无主义的自我否定，而是一种面对“异类智能”时的哲学觉醒。
 
-For those users that need more advanced functionality, the template also supports the following popular tools:
-- [MathJax](https://www.mathjax.org/) for mathematical equations
-- [Mermaid](https://mermaid.js.org/) for diagraming
-- [Plotly](https://plotly.com/javascript/) for plotting
+**二、技术的伦理边界：不该问“能不能”，而应问“该不该”**
 
-Getting started
-======
-1. Register a GitHub account if you don't have one and confirm your e-mail (required!)
-1. Fork [this template](https://github.com/academicpages/academicpages.github.io) by clicking the "Use this template" button in the top right. 
-1. Go to the repository's settings (rightmost item in the tabs that start with "Code", should be below "Unwatch"). Rename the repository "[your GitHub username].github.io", which will also be your website's URL.
-1. Set site-wide configuration and create content & metadata (see below -- also see [this set of diffs](http://archive.is/3TPas) showing what files were changed to set up [an example site](https://getorg-testacct.github.io) for a user with the username "getorg-testacct")
-1. Upload any files (like PDFs, .zip files, etc.) to the files/ directory. They will appear at https://[your GitHub username].github.io/files/example.pdf.  
-1. Check status by going to the repository settings, in the "GitHub pages" section
+AI发展常常遵循技术逻辑——只要可行，便应推进。但这种“技术决定论”是危险的。技术不是中立的，它总是被权力、资本和意识形态所嵌入。面部识别、情绪监控、深度伪造、杀伤性自动武器，这些技术并非自然生成的果实，而是制度、利益与无知共谋的结果。
 
-Site-wide configuration
-------
-The main configuration file for the site is in the base directory in [_config.yml](https://github.com/academicpages/academicpages.github.io/blob/master/_config.yml), which defines the content in the sidebars and other site-wide features. You will need to replace the default variables with ones about yourself and your site's github repository. The configuration file for the top menu is in [_data/navigation.yml](https://github.com/academicpages/academicpages.github.io/blob/master/_data/navigation.yml). For example, if you don't have a portfolio or blog posts, you can remove those items from that navigation.yml file to remove them from the header. 
+我们必须重新激活伦理与政治的思考，超越“进步”的幻象，提出更根本的问题：AI的使用是否尊重人的尊严？是否扩大了社会的不平等？是否加剧了监控与操控？在AI越来越强的同时，我们是否正在变得越来越被动、麻木、易于操纵？
 
-Create content & metadata
-------
-For site content, there is one Markdown file for each type of content, which are stored in directories like _publications, _talks, _posts, _teaching, or _pages. For example, each talk is a Markdown file in the [_talks directory](https://github.com/academicpages/academicpages.github.io/tree/master/_talks). At the top of each Markdown file is structured data in YAML about the talk, which the theme will parse to do lots of cool stuff. The same structured data about a talk is used to generate the list of talks on the [Talks page](https://academicpages.github.io/talks), each [individual page](https://academicpages.github.io/talks/2012-03-01-talk-1) for specific talks, the talks section for the [CV page](https://academicpages.github.io/cv), and the [map of places you've given a talk](https://academicpages.github.io/talkmap.html) (if you run this [python file](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.py) or [Jupyter notebook](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.ipynb), which creates the HTML for the map based on the contents of the _talks directory).
+**三、教育与文化的转向：培养不可被取代的“人之为人”**
 
-**Markdown generator**
+面对AI的崛起，许多人呼吁“与AI协作”“学习Prompt工程”“提升数字素养”，这些固然必要，但更深层的问题是：在一个智能泛滥、信息过剩的世界，人类还有什么不可替代的价值？
 
-The repository includes [a set of Jupyter notebooks](https://github.com/academicpages/academicpages.github.io/tree/master/markdown_generator
-) that converts a CSV containing structured data about talks or presentations into individual Markdown files that will be properly formatted for the Academic Pages template. The sample CSVs in that directory are the ones I used to create my own personal website at stuartgeiger.com. My usual workflow is that I keep a spreadsheet of my publications and talks, then run the code in these notebooks to generate the Markdown files, then commit and push them to the GitHub repository.
+答案也许并不在技术本身，而在我们文化与教育的根部。未来教育应当回归人文精神，重建思辨力、批判力、创造力与同理心。培养不会被AI模仿的“人性维度”：道德判断、价值选择、意义建构。这不是与AI竞争速度，而是重拾深度。
 
-How to edit your site's GitHub repository
-------
-Many people use a git client to create files on their local computer and then push them to GitHub's servers. If you are not familiar with git, you can directly edit these configuration and Markdown files directly in the github.com interface. Navigate to a file (like [this one](https://github.com/academicpages/academicpages.github.io/blob/master/_talks/2012-03-01-talk-1.md) and click the pencil icon in the top right of the content preview (to the right of the "Raw | Blame | History" buttons). You can delete a file by clicking the trashcan icon to the right of the pencil icon. You can also create new files or upload files by navigating to a directory and clicking the "Create new file" or "Upload files" buttons. 
+**四、集体行动与制度建设：打破数据资本主义的牢笼**
 
-Example: editing a Markdown file for a talk
-![Editing a Markdown file for a talk](/images/editing-talk.png)
+当前AI的核心动力不是科学家，而是平台资本主义巨头。他们掌握海量数据与模型算力，形成了对信息、注意力、行为的空前垄断。这是新的“数据封建主义”，大众被分解成可预测的消费者，劳动变成训练模型的无偿素材，社会被算法结构性地重构。
 
-For more info
-------
-More info about configuring Academic Pages can be found in [the guide](https://academicpages.github.io/markdown/), the [growing wiki](https://github.com/academicpages/academicpages.github.io/wiki), and you can always [ask a question on GitHub](https://github.com/academicpages/academicpages.github.io/discussions). The [guides for the Minimal Mistakes theme](https://mmistakes.github.io/minimal-mistakes/docs/configuration/) (which this theme was forked from) might also be helpful.
+因此，AI时代的行动不仅是个人认知的觉醒，更是制度与社会的再造。我们需要打破“AI神话”的幻觉，推动法律、政策、公共数据的民主治理，建设真正以公共利益为导向的技术生态，而非任由AI成为“数字极权”的帮凶。
+
+**结语：**
+
+AI不是人类历史的终点，而是一次文明的再审。它既可以成为工具理性走向毁灭的引信，也可以成为人类重新定义自我、超越自身局限的契机。关键不在AI做了什么，而在我们如何思考、如何选择、如何行动。
+
+要警惕技术崇拜，更要超越技术恐惧。我们不应问：“AI会取代人类吗？”而应问：“人类是否还愿意承担起自身存在的责任？”

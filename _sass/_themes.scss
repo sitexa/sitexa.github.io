@@ -18,6 +18,10 @@ $serif                      : Georgia, Times, serif;
 $sans-serif                 : -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
 $monospace                  : Monaco, Consolas, "Lucida Console", monospace;
 
+/* Chinese font support */
+$chinese-serif              : "SimSun", "STSong", "AR PL UMing CN", "AR PL UMing HK", "AR PL UMing TW", "AR PL UMing TW MBE", "AR PL New Sung", "LiSong Pro", "LiHei Pro", "Hiragino Mincho Pro", serif;
+$chinese-sans-serif         : "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+
 /* Sans serif typefaces */
 $sans-serif-narrow          : $sans-serif;
 $helvetica                  : Helvetica, "Helvetica Neue", Arial, sans-serif;
@@ -39,9 +43,10 @@ $type-size-6                : 0.75em;   // ~12px
 $type-size-7                : 0.6875em; // ~11px
 $type-size-8                : 0.625em;  // ~10px
 
-$global-font-family         : $sans-serif;
-$header-font-family         : $sans-serif;
-$caption-font-family        : $serif;
+/* Updated font families with Chinese support */
+$global-font-family         : $chinese-sans-serif, $sans-serif;
+$header-font-family         : $chinese-sans-serif, $sans-serif;
+$caption-font-family        : $chinese-serif, $serif;
 
 /* ==========================================================================
    Breakpoints
